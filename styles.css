@@ -1,0 +1,8 @@
+svg path:hover,
+svg polyline:hover{
+    fill: lightblue;
+}
+
+.visted {
+    fill:orange;
+}
