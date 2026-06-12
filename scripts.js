@@ -50,17 +50,25 @@ function openCounty(county) {
 
     sidebar.append(closeBtn);
 
+    let infoCard = document.createElement("div");
+    infoCard.className = "infoCard";
+
     let countyName = document.createElement("h2");
     countyName.textContent = county;
-    sidebarContent.append(countyName);
+    infoCard.appendChild(countyName);
 
     for (let i = 0; i < countiesList[county].places.length; i++) {
         let placeName = document.createElement("h3");
         placeName.textContent = countiesList[county].places[i].name;
-        sidebarContent.append(placeName);
+        infoCard.appendChild(placeName);
 
         let placeImg = document.createElement("img");
         placeImg.setAttribute("src", countiesList[county].places[i].img);
-        sidebarContent.append(placeImg);
+        infoCard.appendChild(placeImg);
     };
+    sidebarContent.append(infoCard);
 };
+
+function scrollToMap() {
+    document.getElementById("map").scrollIntoView({ behavior: "smooth" });
+}

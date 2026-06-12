@@ -1,3 +1,15 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Guerrilla&display=swap');
+
+/* Colors */
+:root {
+    --color-1: rgb(192, 255, 109);
+    --color-2: rgb(98, 188, 47);
+    --color-3: rgb(93, 68, 29);
+    --color-4: rgb(150, 226, 238);
+    --color-5: rgb(27, 114, 174);
+}
+
 /* Flexbox */
 #content {
     display: flex;
@@ -11,4 +23,87 @@ svg polyline:hover {
 
 .visited {
     fill: orange;
+}
+
+/* Legend */
+#legend {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 350px;
+    top: 200px;
+    width: 200px;
+    background-color: var(--color-4);
+
+}
+
+#legend h4 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    background-color: var(--color-3);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    margin: 0;
+}
+
+#legend>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+}
+
+#legend>.desc{
+    background-color: var(--color-5);
+}
+
+.visitedBox,
+.unvisitedBox {
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+}
+
+.visitedBox {
+    background-color: orange;
+}
+
+.unvisitedBox {
+    background-color: lightgray;
+}
+
+/* Styling */
+body {
+    background-color: var(--color-5);
+    font-family: 'Cantarell', sans-serif;
+}
+
+h1 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    background-color: var(--color-1);
+    max-width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    background-color: var(--color-4);
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+footer h4 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    background-color: var(--color-3);
+    max-width: 50%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.infoCard {
+    padding: 10px 0 40px 0;
 }

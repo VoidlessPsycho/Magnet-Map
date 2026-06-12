@@ -15,22 +15,48 @@
 
 <body>
 
-    <header>
-        <h1>California Counties Magnet Map</h1>
+    <header style="display:flex; justify-content: center;">
+        <h1 onclick="scrollToMap()">California Counties Magnet Map</h1>
     </header>
     <div id="content">
         <main>
-            <div id="map">
-
+            <div id="legend">
+                <h4 style="width: 100%">Legend</h4>
+                <div>
+                    <div class="visitedBox"></div>
+                    <span> Visited Counties</span>
+                </div>
+                <div>
+                    <div class="unvisitedBox"></div>
+                    <span> Not Visited</span>
+                </div>
+                <div class="desc">
+                    <span style="text-align: center;">Click on a county to see where I've collected magnets from!</span>
+                </div>
             </div>
-            <a href="https://commons.wikimedia.org/wiki/File:California_county_map_(labeled).svg">Thadius856</a>, Public
-            domain, via Wikimedia Commons
+            <div style="padding: 25px;">
+                <div id="map" style="padding:10px 0">
+
+                </div>
+                <div style="text-align: center;">
+                    <a
+                        href=" https://commons.wikimedia.org/wiki/File:California_county_map_(labeled).svg">Thadius856</a>,
+                    Public
+                    domain, via Wikimedia Commons
+                </div>
+            </div>
         </main>
-        <aside id="sidebar">
-            <div id="sidebarContent"></div>
-            <button style="display:none; height:28px; width:28px; text-align: center;" id="toggleSidebar">&#x2715;</button>
+        <aside id="sidebar" style="width: 500px;">
+            <br>
+            <div id="sidebarContent" style="background-color: var(--color-2); text-align: center;"></div>
+            <button style=" display:none; height:28px; width:28px; text-align: center;" id="toggleSidebar">
+                &#x2715;</button>
+            <img src="img/flag.webp" alt="California Flag" style="width:100%; padding: 10px 0">
         </aside>
     </div>
+    <footer style="display:flex; justify-content: center;">
+        <h4>Made by Voidless</h4>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 
