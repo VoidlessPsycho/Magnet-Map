@@ -1,8 +1,14 @@
+/* Flexbox */
+#content {
+    display: flex;
+}
+
+/* Map */
 svg path:hover,
-svg polyline:hover{
+svg polyline:hover {
     fill: lightblue;
 }
 
-.visted {
-    fill:orange;
+.visited {
+    fill: orange;
 }
