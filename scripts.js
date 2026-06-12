@@ -1,5 +1,21 @@
-import { countiesList } from "countiesList.js";
-
+const countiesList = {
+    "Santa Cruz": {
+        places: [
+            {
+                name: "Mystery Spot",
+                img: "img/places/mystery-spot.png"
+            }
+        ]
+    },
+    "Sonoma": {
+        places: [
+            {
+                name: "Peanuts Museum",
+                img: "img/places/peanuts-museum.png"
+            }
+        ]
+    }
+}
 
 fetch("img/california.svg")
     .then(res => res.text())
@@ -20,19 +36,31 @@ fetch("img/california.svg")
     });
 
 function openCounty(county) {
+    let sidebarContent = document.getElementById("sidebarContent");
+    sidebarContent.innerHTML = "";
+
     let sidebar = document.getElementById("sidebar");
-    sidebar.innerHTML = "";
+
+    let closeBtn = document.getElementById("toggleSidebar");
+    closeBtn.style.display = "inline-block";
+    closeBtn.addEventListener("click", () => {
+        sidebarContent.innerHTML = "";
+        closeBtn.style.display = "none";
+    });
+
+    sidebar.append(closeBtn);
 
     let countyName = document.createElement("h2");
     countyName.textContent = county;
-    sidebar.append(countyName);
+    sidebarContent.append(countyName);
 
-    let placeName = document.createElement("h3");
-    placeName.textContent = countiesList[county].places.name;
-    sidebar.append(placeName);
+    for (let i = 0; i < countiesList[county].places.length; i++) {
+        let placeName = document.createElement("h3");
+        placeName.textContent = countiesList[county].places[i].name;
+        sidebarContent.append(placeName);
 
-    let placeImg = document.createElement("img");
-    placeImg.setAttribute("src", countiesList[county].places.img);
-    sidebar.append(placeImg)
-
-}
+        let placeImg = document.createElement("img");
+        placeImg.setAttribute("src", countiesList[county].places[i].img);
+        sidebarContent.append(placeImg);
+    };
+};
