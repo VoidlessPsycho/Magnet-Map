@@ -51,11 +51,24 @@ footer h4 {
 
 }
 
+.dropdown-arrow {
+    position:absolute;
+    top:10px;
+    right:25px;
+}
+
 .dropdown>.flagImg {
     position: absolute;
     top: 10px;
     right: 25px;
     height: 60px;
+}
+
+.dropdown-content a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 0 0 0;
 }
 
 .dropdown-content .flagImg {
@@ -71,7 +84,7 @@ footer h4 {
     display: none;
     position: absolute;
     top: 70px;
-    right:0px;
+    right: 25px;
     background: white;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -80,6 +93,10 @@ footer h4 {
 .dropdown:hover .dropdown-content,
 .dropdown-content:hover .dropdown-content {
     display: block;
+}
+
+.dropdown-content a:hover {
+    transform: scale(1.1);
 }
 
 
