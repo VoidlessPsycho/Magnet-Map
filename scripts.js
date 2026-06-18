@@ -1,37 +1,4 @@
-const countiesList = {
-    "Santa Cruz": {
-        places: [
-            {
-                name: "Mystery Spot",
-                img: "img/places/mystery-spot.png"
-            }
-        ]
-    },
-    "Sonoma": {
-        places: [
-            {
-                name: "Peanuts Museum",
-                img: "img/places/peanuts-museum.png"
-            }
-        ]
-    },
-    "Santa Clara": {
-        places: [
-            {
-                name: "The Tech Interactive",
-                img: "img/places/the-tech-interactive.png"
-            }
-        ]
-    },
-    "Napa": {
-        places: [
-            {
-                name: "Old Faithful Geyser",
-                img: "img/places/old-faithful-geyser.png"
-            }
-        ]
-    }
-}
+
 
 fetch("img/california.svg")
     .then(res => res.text())
