@@ -44,6 +44,7 @@ function openCounty(county) {
     let countyName = document.createElement("h2");
     countyName.textContent = county;
     countyName.textContent = countyName.textContent.replaceAll("_", " ");
+    countyName.textContent+=" County"
     countyCard.appendChild(countyName);
 
     for (let i = 0; i < placesList.California[county].places.length; i++) {
