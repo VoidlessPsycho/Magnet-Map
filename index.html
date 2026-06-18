@@ -16,10 +16,14 @@
 <body>
     <div class="container">
         <header style="display:flex; justify-content: center;">
-            <img src="img/flag.webp" style="display:inline; height:60px; margin:auto">
-            <h1 onclick="scrollToMap()" style="margin:auto">California Counties
-                Magnet Map</h1>
-            <img src="img/flag.webp" style="display:inline; height:60px; margin:auto">
+            <h1 onclick="scrollToMap()" style="margin:auto">Magnet Map</h1>
+            <div class="dropdown">
+                <img src="img/flags/california.webp" class="flagImg">
+                <div class="dropdown-content">
+                    <a href="usa.html"><img src="img/flags/usa.webp" class="flagImg"></a>
+                    <a href="world.html"><img src="img/flags/world.png" class="flagImg"></a>
+                </div>
+            </div>
         </header>
         <div id="content">
             <main>
@@ -55,7 +59,7 @@
                 </div>
             </main>
             <div id="sidebar">
-                <h1>The California Times</h1>
+                <h1 id="sidebarHeader"></h1>
                 <div class="subhead">
                     <h5 style="margin:10px 0">Est. 2026</h5>
                 </div>
@@ -69,7 +73,15 @@
             <h4>Made by Voidless</h4>
         </footer>
     </div>
+    <script>
+        window.MAP_CONFIG = {
+            name: "california",
+            svg: "maps/california.svg",
+            data: "data/california.json",
+        }
+    </script>
     <script src="scripts.js"></script>
+
 </body>
 
 </html>

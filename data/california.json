@@ -1,0 +1,196 @@
+{
+    "Alameda": {
+        "places": []
+    },
+    "Alpine": {
+        "places": []
+    },
+    "Amador": {
+        "places": []
+    },
+    "Butte": {
+        "places": []
+    },
+    "Calaveras": {
+        "places": []
+    },
+    "Colusa": {
+        "places": []
+    },
+    "Contra_Costa": {
+        "places": []
+    },
+    "Del_Norte": {
+        "places": []
+    },
+    "El_Dorado": {
+        "places": []
+    },
+    "Fresno": {
+        "places": []
+    },
+    "Glenn": {
+        "places": []
+    },
+    "Humboldt": {
+        "places": []
+    },
+    "Imperial": {
+        "places": []
+    },
+    "Inyo": {
+        "places": []
+    },
+    "Kern": {
+        "places": []
+    },
+    "Kings": {
+        "places": []
+    },
+    "Lake": {
+        "places": []
+    },
+    "Lassen": {
+        "places": []
+    },
+    "Los_Angeles": {
+        "places": []
+    },
+    "Madera": {
+        "places": []
+    },
+    "Marin": {
+        "places": []
+    },
+    "Mariposa": {
+        "places": []
+    },
+    "Mendocino": {
+        "places": []
+    },
+    "Merced": {
+        "places": []
+    },
+    "Modoc": {
+        "places": []
+    },
+    "Mono": {
+        "places": []
+    },
+    "Monterey": {
+        "places": []
+    },
+    "Napa": {
+        "places": [
+            {
+                "name": "Old Faithful Geyser",
+                "img": "img/places/california/old-faithful-geyser.png"
+            }
+        ]
+    },
+    "Nevada": {
+        "places": []
+    },
+    "Orange": {
+        "places": []
+    },
+    "Placer": {
+        "places": []
+    },
+    "Plumas": {
+        "places": []
+    },
+    "Riverside": {
+        "places": []
+    },
+    "Sacramento": {
+        "places": []
+    },
+    "San_Benito": {
+        "places": []
+    },
+    "San_Bernardino": {
+        "places": []
+    },
+    "San_Diego": {
+        "places": []
+    },
+    "San_Francisco": {
+        "places": []
+    },
+    "San_Joaquin": {
+        "places": []
+    },
+    "San_Luis_Obispo": {
+        "places": []
+    },
+    "San_Mateo": {
+        "places": []
+    },
+    "Santa_Barbara": {
+        "places": []
+    },
+    "Santa_Clara": {
+        "places": [
+            {
+                "name": "The Tech Interactive",
+                "img": "img/places/california/the-tech-interactive.png"
+            }
+        ]
+    },
+    "Santa_Cruz": {
+        "places": [
+            {
+                "name": "Mystery Spot",
+                "img": "img/places/california/mystery-spot.png"
+            }
+        ]
+    },
+    "Shasta": {
+        "places": []
+    },
+    "Sierra": {
+        "places": []
+    },
+    "Siskiyou": {
+        "places": []
+    },
+    "Solano": {
+        "places": []
+    },
+    "Sonoma": {
+        "places": [
+            {
+                "name": "Peanuts Museum",
+                "img": "img/places/california/peanuts-museum.png"
+            }
+        ]
+    },
+    "Stanislaus": {
+        "places": []
+    },
+    "Sutter": {
+        "places": []
+    },
+    "Tehama": {
+        "places": []
+    },
+    "Trinity": {
+        "places": []
+    },
+    "Tulare": {
+        "places": []
+    },
+    "Tuolumne": {
+        "places": []
+    },
+    "Ventura": {
+        "places": []
+    },
+    "Yolo": {
+        "places": []
+    },
+    "Yuba": {
+        "places": []
+    }
+}
