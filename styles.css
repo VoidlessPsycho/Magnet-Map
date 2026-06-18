@@ -3,59 +3,150 @@
 
 /* Colors */
 :root {
-    --color-1: rgb(192, 255, 109);
-    --color-2: rgb(98, 188, 47);
-    --color-3: rgb(93, 68, 29);
-    --color-4: rgb(150, 226, 238);
-    --color-5: rgb(27, 114, 174);
+    --color-1: #d9e7e8;
+    /* page background */
+    --color-2: #f8f5e6;
+    /* newspaper paper */
+    --color-3: #2c5f8a;
+    /* header blue */
+    --color-4: #8b6b2e;
+    /* brass/brown accent */
+    --color-5: #d9901a;
+    /* visited counties */
+    --color-6: #111111;
+    /* text/borders */
 }
 
-/* Flexbox */
+
+/* Styling */
+body {
+    background-color: var(--color-1);
+    font-family: 'Cantarell', sans-serif;
+    margin: 10px 0 0 0;
+}
+
+header h1 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    background-color: var(--color-3);
+    color: var(--color-6);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px 40px;
+    border: 3px solid var(--color-6);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .2);
+}
+
+footer h4 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    background-color: var(--color-3);
+    max-width: 50%;
+    text-align: center;
+    padding: 10px;
+    color: var(--color-6);
+}
+
+/* Grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    max-width: 1800px;
+    margin: auto;
+}
+
+header {
+    grid-area: header;
+}
+
 #content {
+    display: grid;
+    grid-template-columns: 1fr 550px;
+    gap: 30px;
+    align-items: start;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(1.5fr, 1fr);
+    grid-template-rows: min-content;
+    grid-template-areas:
+        "map info";
+}
+
+main {
     display: flex;
+    grid-area: map;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sidebar {
+    width: 550px;
+    background-color: var(--color-2);
+    border: 3px solid var(--color-6);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, .15);
+    position: sticky;
+    top: 10px;
 }
 
 /* Map */
-svg path:hover,
-svg polyline:hover {
-    fill: lightblue;
+svg .county:hover {
+    filter: brightness(1.2)
 }
 
 .visited {
-    fill: orange;
+    fill: var(--color-5);
 }
 
 /* Legend */
 #legend {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 350px;
-    top: 200px;
-    width: 200px;
-    background-color: var(--color-4);
-
+    width: max-content;
+    height: min-content;
+    background-color: var(--color-2);
+    border: 2px solid var(--color-6);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
 }
 
 #legend h4 {
     font-family: 'Protest Guerrilla', sans-serif;
-    background-color: var(--color-3);
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    color: white;
+    background-color: var(--color-4);
+    color: var(--color-6);
     margin: 0;
 }
 
 #legend>div {
     display: flex;
     align-items: center;
+}
+
+.legendContent>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 8px;
     padding: 5px 10px;
 }
 
-#legend>.desc{
-    background-color: var(--color-5);
+.desc {
+    width: 200px;
+    text-align: center;
+    margin: auto;
 }
 
 .visitedBox,
@@ -63,6 +154,7 @@ svg polyline:hover {
     width: 20px;
     height: 20px;
     border-style: solid;
+    display: inline-block;
 }
 
 .visitedBox {
@@ -73,37 +165,76 @@ svg polyline:hover {
     background-color: lightgray;
 }
 
-/* Styling */
-body {
-    background-color: var(--color-5);
-    font-family: 'Cantarell', sans-serif;
+/* Sidebar */
+
+#sidebar {
+    width: 500px;
+    background-color: var(--color-2);
+    font-family: Georgia, "Times New Roman", serif;
+    position: sticky;
+    top: 5px;
 }
 
-h1 {
-    font-family: 'Protest Guerrilla', sans-serif;
-    background-color: var(--color-1);
-    max-width: 50%;
+#sidebarContent {
     text-align: center;
-    padding: 10px;
 }
 
-h2 {
-    background-color: var(--color-4);
-    max-width: fit-content;
-    margin: auto;
-    margin-top: 20px;
-    padding: 0 10px;
-}
-
-footer h4 {
-    font-family: 'Protest Guerrilla', sans-serif;
-    background-color: var(--color-3);
-    max-width: 50%;
+#sidebar h1 {
+    text-transform: uppercase;
     text-align: center;
-    padding: 10px;
-    color: white;
+    margin: 0;
+    padding: 20px 10px 10px;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--color-6);
+    letter-spacing: 1px;
+}
+
+#sidebar .subhead {
+    border-bottom: 4px solid var(--color-6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding:0;
+    margin:0;
+}
+
+#sidebar h2 {
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+#sidebar h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#sidebar img {
+    width: 85%;
+    max-width: 350px;
+    border: 2px solid var(--color-6);
+    margin-bottom: 25px;
 }
 
 .infoCard {
-    padding: 10px 0 40px 0;
+    padding: 0 0 40px 0;
+}
+
+/* Button */
+#toggleSidebar {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 28px;
+    width: 28px;
+    text-align: center;
 }

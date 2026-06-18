@@ -1,139 +1,85 @@
 {
     "California": {
         "Alameda": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Alpine": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Amador": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Butte": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Calaveras": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Colusa": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Contra_Costa": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Del_Norte": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "El_Dorado": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Fresno": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Glenn": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Humboldt": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Imperial": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Inyo": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Kern": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Kings": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Lake": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Lassen": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Los_Angeles": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Madera": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Marin": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Mariposa": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Mendocino": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Merced": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Modoc": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Mono": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Monterey": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Napa": {
             "places": [
@@ -144,74 +90,46 @@
             ]
         },
         "Nevada": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Orange": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Placer": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Plumas": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Riverside": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Sacramento": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "San_Benito": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "San_Bernardino": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "San_Diego": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "San_Francisco": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "San_Joaquin": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "San_Luis_Obispo": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "San_Mateo": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Santa_Barbara": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Santa_Clara": {
             "places": [
@@ -230,24 +148,16 @@
             ]
         },
         "Shasta": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Sierra": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Siskiyou": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Solano": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Sonoma": {
             "places": [
@@ -258,49 +168,31 @@
             ]
         },
         "Stanislaus": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Sutter": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Tehama": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Trinity": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Tulare": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Tuolumne": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Ventura": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Yolo": {
-            "places": [
-                {}
-            ]
+            "places": []
         },
         "Yuba": {
-            "places": [
-                {}
-            ]
+            "places": []
         }
     }
 }

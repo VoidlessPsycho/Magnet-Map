@@ -1,18 +1,23 @@
-
-
-fetch("img/california.svg")
+let placesList = {};
+fetch("visitedPlaces.json")
+    .then(res => res.json())
+    .then(data => {
+        placesList = data;
+        return fetch("img/california.svg");
+    })
     .then(res => res.text())
     .then(svg => {
         document.getElementById("map").innerHTML = svg;
-        document.querySelectorAll('polyline[id^="_x"], path[id^="_x"]').forEach((county) => {
-            let name = county.id.replace(/^_x\d+_\d+_/, "");
-            name = name.replaceAll("_", " ");
-            if (countiesList[name]) {
+        document.querySelectorAll(".county").forEach((county) => {
+            const countyData = placesList.California[county.id];
+
+            if (countyData && countyData.places.length > 0) {
                 county.classList.add("visited");
             }
-            county.addEventListener("click", function () {
+
+            county.addEventListener("click", () => {
                 if (county.classList.contains("visited")) {
-                    openCounty(name);
+                    openCounty(county.id);
                 }
             });
         });
@@ -33,23 +38,28 @@ function openCounty(county) {
 
     sidebar.append(closeBtn);
 
-    let infoCard = document.createElement("div");
-    infoCard.className = "infoCard";
+    let countyCard = document.createElement("div");
+    countyCard.className = "countyCard";
 
     let countyName = document.createElement("h2");
     countyName.textContent = county;
-    infoCard.appendChild(countyName);
+    countyName.textContent = countyName.textContent.replaceAll("_", " ");
+    countyCard.appendChild(countyName);
 
-    for (let i = 0; i < countiesList[county].places.length; i++) {
+    for (let i = 0; i < placesList.California[county].places.length; i++) {
+        let placeCard = document.createElement("div");
+        placeCard.className = "placeCard";
+
         let placeName = document.createElement("h3");
-        placeName.textContent = countiesList[county].places[i].name;
-        infoCard.appendChild(placeName);
+        placeName.textContent = placesList.California[county].places[i].name;
+        placeCard.appendChild(placeName);
 
         let placeImg = document.createElement("img");
-        placeImg.setAttribute("src", countiesList[county].places[i].img);
-        infoCard.appendChild(placeImg);
+        placeImg.setAttribute("src", placesList.California[county].places[i].img);
+        placeCard.appendChild(placeImg);
+        countyCard.append(placeCard);
     };
-    sidebarContent.append(infoCard);
+    sidebarContent.append(countyCard);
 };
 
 function scrollToMap() {
