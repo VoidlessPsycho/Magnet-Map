@@ -1,0 +1,195 @@
+{
+    "Alabama": {
+        "places": []
+    },
+    "Alaska": {
+        "places": []
+    },
+    "Arizona": {
+        "places": [
+            {
+                "name": "Grand Canyon",
+                "img": "img/places/usa/grand-canyon.jpg"
+            }
+        ]
+    },
+    "Arkansas": {
+        "places": []
+    },
+    "California": {
+        "places": [
+            1
+        ]
+    },
+    "Colorado": {
+        "places": []
+    },
+    "Connecticut": {
+        "places": []
+    },
+    "Delaware": {
+        "places": []
+    },
+    "Florida": {
+        "places": []
+    },
+    "Georgia": {
+        "places": []
+    },
+    "Hawaii": {
+        "places": []
+    },
+    "Idaho": {
+        "places": []
+    },
+    "Illinois": {
+        "places": []
+    },
+    "Indiana": {
+        "places": []
+    },
+    "Iowa": {
+        "places": []
+    },
+    "Kansas": {
+        "places": []
+    },
+    "Kentucky": {
+        "places": []
+    },
+    "Louisiana": {
+        "places": []
+    },
+    "Maine": {
+        "places": []
+    },
+    "Maryland": {
+        "places": []
+    },
+    "Massachusetts": {
+        "places": []
+    },
+    "Michigan": {
+        "places": []
+    },
+    "Minnesota": {
+        "places": []
+    },
+    "Mississippi": {
+        "places": []
+    },
+    "Missouri": {
+        "places": []
+    },
+    "Montana": {
+        "places": []
+    },
+    "Nebraska": {
+        "places": []
+    },
+    "Nevada": {
+        "places": [
+            {
+                "name": "Hoover Dam",
+                "img": "img/places/usa/hoover-dam.png"
+            },
+            {
+                "name": "M&M'S Las Vegas",
+                "img": "img/places/usa/mms-las-vegas.png"
+            }
+        ]
+    },
+    "New_Hampshire": {
+        "places": []
+    },
+    "New_Jersey": {
+        "places": []
+    },
+    "New_Mexico": {
+        "places": []
+    },
+    "New_York": {
+        "places": [
+            {
+                "name": "9/11 Memorial",
+                "img": "img/places/usa/9_11-memorial.png"
+            }
+        ]
+    },
+    "North_Carolina": {
+        "places": []
+    },
+    "North_Dakota": {
+        "places": []
+    },
+    "Ohio": {
+        "places": []
+    },
+    "Oklahoma": {
+        "places": []
+    },
+    "Oregon": {
+        "places": [
+            {
+                "name": "Crater Lake National Park",
+                "img": "img/places/usa/crater-lake-np.jpg"
+            }
+        ]
+    },
+    "Pennsylvania": {
+        "places": []
+    },
+    "Rhode_Island": {
+        "places": []
+    },
+    "South_Carolina": {
+        "places": []
+    },
+    "South_Dakota": {
+        "places": []
+    },
+    "Tennessee": {
+        "places": []
+    },
+    "Texas": {
+        "places": []
+    },
+    "Utah": {
+        "places": []
+    },
+    "Vermont": {
+        "places": []
+    },
+    "Virginia": {
+        "places": [
+            {
+                "name": "National Museum of the United States Army",
+                "img": "img/places/usa/national-museum-us-army.jpg"
+            }
+        ]
+    },
+    "Washington": {
+        "places": []
+    },
+    "West_Virginia": {
+        "places": []
+    },
+    "Wisconsin": {
+        "places": []
+    },
+    "Wyoming": {
+        "places": []
+    },
+    "District_of_Columbia": {
+        "places": [
+            {
+                "name": "Washington D.C.",
+                "img": "img/places/usa/washington-dc.png"
+            },
+            {
+                "name": "Smithsonian National Museum of Natural History",
+                "img": "img/places/usa/smithsonian-museum-of-natural-history.png"
+            }
+        ]
+    }
+}

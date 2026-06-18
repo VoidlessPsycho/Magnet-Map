@@ -29,6 +29,10 @@ fetch(data)
     })
 
 function openRegion(region) {
+    if (region == "California") {
+        window.location.href = "index.html";
+        return;
+    }
     let sidebarContent = document.getElementById("sidebarContent");
     sidebarContent.innerHTML = "";
 

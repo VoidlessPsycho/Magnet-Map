@@ -4,17 +4,17 @@
 /* Colors */
 :root {
     --color-1: #d9e7e8;
-    /* page background */
+
     --color-2: #f8f5e6;
-    /* newspaper paper */
+
     --color-3: #2c5f8a;
-    /* header blue */
+
     --color-4: #8b6b2e;
-    /* brass/brown accent */
+
     --color-5: #d9901a;
-    /* visited counties */
+
     --color-6: #111111;
-    /* text/borders */
+    --color-7: #D0D0D0;
 }
 
 
@@ -52,9 +52,9 @@ footer h4 {
 }
 
 .dropdown-arrow {
-    position:absolute;
-    top:10px;
-    right:25px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
 }
 
 .dropdown>.flagImg {
