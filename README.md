@@ -19,11 +19,10 @@ Live Web App Link: https://voidlesspsycho.github.io/Magnet-Map/
 - Dropdown Menu to access all Map Modes
 
 ## How to Use
-1. Click on the title to scroll down to the map.
-2. Click on Counties colored Orange on the map.
-3. See a picture of my magnets and where I got them from in that county.
-4. Close the Sidebar with the X button at the bottom of the sidebar.
-5. Access the USA and World Maps using the dropdown menu in the top right corner. 
+1. Click on regions colored orange in the map, as explained by the legend.
+2. View information about locations I've been to within the region and images of magnets I've collected from each location.
+3. Close the information in the newspaper-styled sidebar with the X button at the top right.
+4. Access the other maps (California, USA, World) using the dropdown menu in the top right corner. 
 
 ## How it Works
 1. The maps are SVG (Scalable Vector Graphic) files from Wikimedia. They are made up of polyline, path, and circle elements for each region. 
