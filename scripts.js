@@ -1,4 +1,5 @@
 let placesList = {};
+let numPlacesVisited = 0;
 
 const { name, svg, data } = window.MAP_CONFIG;
 fetch(data)
@@ -10,11 +11,12 @@ fetch(data)
     .then(res => res.text())
     .then(svg => {
         document.getElementById("map").innerHTML = svg;
-        document.querySelectorAll(".region").forEach((region) => {
+        document.querySelectorAll(".region, .land, .circle").forEach((region) => {
             const regionData = placesList[region.id];
 
             if (regionData && regionData.places.length > 0) {
                 region.classList.add("visited");
+                numPlacesVisited++;
             }
 
             region.addEventListener("click", () => {
@@ -26,11 +28,18 @@ fetch(data)
 
         let newsHeader = document.getElementById("sidebarHeader");
         newsHeader.innerText = "The " + name + " Times";
+
+        let numPlacesVisitedDisplay = document.getElementById("numPlacesVisited");
+        numPlacesVisitedDisplay.innerText = numPlacesVisited;
     })
 
 function openRegion(region) {
     if (region == "California") {
         window.location.href = "index.html";
+        return;
+    }
+    if (region == "United_States") {
+        window.location.href = "usa.html";
         return;
     }
     let sidebarContent = document.getElementById("sidebarContent");

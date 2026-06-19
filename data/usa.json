@@ -96,6 +96,10 @@
             {
                 "name": "M&M'S Las Vegas",
                 "img": "img/places/usa/mms-las-vegas.png"
+            },
+            {
+                "name": "Coca-Cola Store Las Vegas",
+                "img": "img/places/usa/coca_cola-las-vegas.png"
             }
         ]
     },

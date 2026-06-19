@@ -1,0 +1,15 @@
+{
+    "United_States": {
+        "places": [
+            1
+        ]
+    },
+    "Mexico": {
+        "places": [
+            {
+                "name": "Cabo San Lucas",
+                "img": "img/places/world/cabo-san-lucas.png"
+            }
+        ]
+    }
+}

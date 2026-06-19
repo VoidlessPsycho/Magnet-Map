@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Magnet Map</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="GPA, calculator, simple">
+    <meta name="description" content="An interactive web map with images of magnets of places I've visited.">
+    <meta name="author" content="Maneesh Gollapudi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/magnet.ico">
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header style="display:flex; justify-content: center;">
+            <h1 onclick="scrollToMap()" style="margin:auto">Magnet Map</h1>
+            <div class="dropdown">
+                <img src="img/flags/world.png" class="flagImg">
+                <p class="dropdown-arrow">&#9660;</p>
+                <div class="dropdown-content">
+                    <a href="index.html"><img src="img/flags/california.webp" class="flagImg"></a>
+                    <a href="usa.html"><img src="img/flags/usa.png" class="flagImg"></a>
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <main>
+                <div id="legend">
+                    <h4 style="width: 100%" class="legend-h">Legend</h4>
+                    <div>
+                        <div class="legendContent">
+                            <div>
+                                <div class="visitedBox"></div>
+                                <span> Visited Countries</span>
+                            </div>
+                            <div>
+                                <div class="unvisitedBox"></div>
+                                <span> Not Visited</span>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span style="text-align: center;">Click on a country to see where I've collected magnets
+                                from!</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 25px;">
+                    <div id="map">
+
+                    </div>
+                    <div style="text-align: center;"><span id="numPlacesVisited"></span> / 195 Countries Visited</div>
+                    <div style="text-align: center;" class="credit">
+                        <a
+                            href="https://commons.wikimedia.org/wiki/File:World_map_(Miller_cylindrical_projection,_blank_without_Antarctica).svg">Allice
+                            Hunter</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via
+                        Wikimedia Commons
+                    </div>
+                </div>
+            </main>
+            <div id="sidebar">
+                <h1 id="sidebarHeader"></h1>
+                <div class="subhead">
+                    <h5 style="margin:10px 0">Est. 2026</h5>
+                </div>
+                <div></div>
+                <div id="sidebarContent"></div>
+                <button id="toggleSidebar">
+                    &#x2715;</button>
+            </div>
+        </div>
+        <footer style="display:flex; justify-content: center;">
+            <h4>Made by Voidless</h4>
+        </footer>
+    </div>
+    <script>
+        window.MAP_CONFIG = {
+            name: "world",
+            svg: "maps/world.svg",
+            data: "data/world.json",
+        }
+    </script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
