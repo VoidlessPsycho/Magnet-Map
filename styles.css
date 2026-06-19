@@ -23,6 +23,7 @@ body {
     background-color: var(--color-1);
     font-family: 'Cantarell', sans-serif;
     margin: 10px 0 0 0;
+    zoom:90%
 }
 
 header h1 {
@@ -110,7 +111,7 @@ footer h4 {
         "content"
         "footer";
     max-width: 1800px;
-    margin: auto;
+    margin: auto
 }
 
 header {
@@ -159,6 +160,7 @@ svg .region:hover {
 .visited {
     fill: var(--color-5);
 }
+
 
 /* Legend */
 #legend {
